@@ -1,0 +1,5 @@
+*.pyc
+*.iml
+venv
+.idea
+db.sqlite3

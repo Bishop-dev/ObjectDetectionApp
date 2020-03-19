@@ -1,0 +1,13 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'face_detection/style.css' %}">
+
+{% if persons %}
+    <ul>
+    {% for person in persons %}
+        <li><a href="{{ person.instagram }}">{{ person.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No persons stored in database.</p>
+{% endif %}
